@@ -3,13 +3,13 @@
 
 Función,Pin 
 
-SIG,   GPIO10
-S0,    GPIO5
-S1,    GPIO6
-S2,    GPIO7
-S3,    GPIO3
-EN,    GPIO4 o conectar a GND todo el rato funcionando
-VCC,    3.3V   Importante: segun modelos aguanta bien a 5v
+	SIG,   GPIO10
+	S0,    GPIO5
+	S1,    GPIO6
+	S2,    GPIO7
+	S3,    GPIO3
+	EN,    GPIO4 o conectar a GND todo el rato funcionando
+	VCC,    3.3V   Importante: segun modelos aguanta bien a 5v
 
 se usa un ESP32-C3 supermini
 
