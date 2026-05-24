@@ -26,14 +26,14 @@ Alimenta el 74HC4067 por VCC a 5V.
 
 
 Diagrama por Canal (con condensador 22µF)
-textLADO 220V AC
-220V FASE ─────[ 220kΩ 1W ]────┬──── Anodo LED PC817 (pin 1)
+
+	LADO 220V AC
+		220V FASE ─────[ 220kΩ 1W ]────┬──── Anodo LED PC817 (pin 1)
                                 │
                              Neutro (N)
 
-
-                       LADO 5V
-+5V ─────[ 4.7kΩ ]──── Collector (pin 4) PC817 ──────► Yx (entrada del 74HC4067)
+    LADO 5V	   
+	+5V ─────[ 4.7kΩ ]──── Collector (pin 4) PC817 ──────► Yx (entrada del 74HC4067)
                        │
                     22µF 25V
                        │
