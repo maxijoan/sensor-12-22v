@@ -38,5 +38,9 @@ Diagrama por Canal (con condensador 22µF)
                     22µF 25V
                        │
                       GND
+
+La resistencia de entrada recomendada de 220K la sustituido por una de 100 y una de 47 en serie para poder poner de 1/4w y es suficiente. no se calienta
+
+
                        │
                     Emisor (pin 3) ───── GND
