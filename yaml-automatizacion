@@ -1,0 +1,18 @@
+alias: "Villa Paraiso: Sincronizar estados físicos"
+description: Enciende el botón al pulsar y lo apaga al soltar
+triggers:
+  - topic: tele/Villa_Paraiso/BUTTON
+    trigger: mqtt
+conditions: []
+actions:
+  - target:
+      entity_id: >-
+        {{ 'input_boolean.boton_' ~ trigger.payload_json.Button ~
+        '_villa_paraiso' }}
+    action: |-
+      {% if trigger.payload_json.Action == 'PRESSED' %}
+        input_boolean.turn_on
+      {% else %}
+        input_boolean.turn_off
+      {% endif %}
+mode: parallel
