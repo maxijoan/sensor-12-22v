@@ -22,7 +22,7 @@ ESQUEMA ELÉCTRICO FINAL - TODO A 5V
 Alimentación general:
 
 Alimenta el ESP32-C3 SuperMini por el pin 5V.
-Alimenta el 74HC4067 por VCC a 5V.
+Alimenta el 74HC4067 por VCC a 5V. (aunque deberia ser a 3,3)
 
 
 Diagrama por Canal (con condensador 22µF)
@@ -44,3 +44,20 @@ La resistencia de entrada recomendada de 220K la sustituido por una de 100 y una
 
                        │
                     Emisor (pin 3) ───── GND
+<img width="625" height="939" alt="image" src="https://github.com/user-attachments/assets/03d2acc8-8752-448f-9b0b-8e089ea6439d" />
+
+Hardware ESP32-C3 SuperMini:
+
+S0→GPIO5, S1→GPIO8, S2→GPIO0, S3→GPIO1, SIG→GPIO2
+OLED SDA→GPIO7, SCL→GPIO6
+Botón pantalla→GPIO9
+
+Funcionalidades:
+
+✅ 16 canales MUX escaneados cada 50ms
+✅ MQTT publica PRESSED/RELEASED en tele/Villa_Paraiso/button
+✅ Pantalla OLED con IP, 16 estados y web loquequieras.com
+✅ Canal 0 = TEST (1 segundo)
+✅ Apagado automático pantalla a los 20s
+✅ Botón GPIO9 enciende/apaga pantalla
+✅ Panel web en Tasmota con cuadrícula de 16 botones
