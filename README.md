@@ -4,11 +4,7 @@ el condensador de 22uF se puede cambiar por uno de 4.7uF para aumentar velocidad
 
 Función,Pin 
 
-	SIG,   GPIO10
-	S0,    GPIO5
-	S1,    GPIO6
-	S2,    GPIO7
-	S3,    GPIO3
+	S0→GPIO5, S1→GPIO8, S2→GPIO0, S3→GPIO1, SIG→GPIO2 OLED SDA→GPIO7, SCL→GPIO6 Botón pantalla→GPIO9
 	EN,    GPIO4 o conectar a GND todo el rato funcionando
 	VCC,    3.3V   Importante: segun modelos aguanta bien a 5v
 
