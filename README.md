@@ -55,9 +55,15 @@ Botón pantalla→GPIO9
 Funcionalidades:
 
 ✅ 16 canales MUX escaneados cada 50ms
-✅ MQTT publica PRESSED/RELEASED en tele/Villa_Paraiso/button
+
+✅ MQTT publica PRESSED/RELEASED en tele/xxxxxxxx/button
+
 ✅ Pantalla OLED con IP, 16 estados y web loquequieras.com
+
 ✅ Canal 0 = TEST (1 segundo)
+
 ✅ Apagado automático pantalla a los 20s
+
 ✅ Botón GPIO9 enciende/apaga pantalla
+
 ✅ Panel web en Tasmota con cuadrícula de 16 botones
